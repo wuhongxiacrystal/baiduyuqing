@@ -1,0 +1,274 @@
+*{
+	margin:0;
+	padding: 0;
+	text-decoration: none;
+}
+.box .section:nth-child(1){
+	background: url(../images/bg-0_c25cb21.jpg);
+}
+.nav{
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #168BD8;
+	z-index: 10;
+}
+.nav1{
+	width: 1000px;
+	height: 60px;
+	margin: 0 auto;
+}
+.nav .nav1 .logo{
+	width: 120px;
+	height: 40px;
+	margin-top: 10px;
+	background: url(../images/header_z_94c6de7.png);
+	float: left;
+}
+.nav .nav1 .world{
+	width:360px;
+	height: 60px;
+	float: left;
+}
+.nav .nav1 .world a{
+	display: block;
+	float: right;
+	font-size: 16px;
+	color: #fff;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 30px;
+	font-family: "微软雅黑";
+}
+.message{
+	width: 327.578px;
+	height: 28px;
+	float: right;
+}
+.message a{
+	display: block;
+	float: right;
+	font-size: 10px;
+	color: #fff;
+	margin-left: 10px;
+	margin-right: 20px;
+	margin-top: 30px;
+	font-family: "微软雅黑";
+}
+/* .message a i{
+	width: 32px;
+	height: 25px;
+	background: url(../images/header_z_94c6de7.png) 0 0;
+} */
+@keyframes cloud{
+	0%{
+		background-position:2000px 0;
+	}
+	100%{
+		background-position:0 0;
+	}
+}
+.cloud{
+	width: 100%;
+	height: 500px;
+	position:absolute;
+	bottom:50%;
+	left: 0;
+}
+.cloud .cloud1{
+	background: url(../images/cloud_2_a186193.png)repeat-x;
+	position: absolute;
+	top: 170px;
+	width: 100%;
+	height: 400px;
+	 animation: cloud 50s linear infinite;
+}
+
+.cloud .cloud2{
+	background: url(../images/cloud_3_5ee0340.png)repeat-x;
+	position: absolute;
+	top: 170px;
+	width: 100%;
+	height: 400px;
+	animation: cloud 100s linear infinite;
+}
+@keyframes plan{
+	0%{
+		top:0;
+	}50%{
+		top:-10px;
+	}80%{
+		top:0;
+		}100%{
+			top:-10px;
+		}
+}
+.wenzi{
+	width: 501px;
+	height: 158px;
+	margin-left: 200px;
+	position: relative;
+	margin-top: -200px;
+}
+.wenzi img:nth-child(2){
+	position: absolute;
+	top: 0;
+	left: 300px;
+	animation: plan 3s ease infinite alternate;
+}
+/* .fish{
+	margin-left:340px;
+	margin-top: 100px; 
+	position: relative;
+	display: inline-block;
+} */
+@keyframes fishmove{
+	100%{transform:translateX(20px)}
+}
+.shan img:nth-child(1){
+	 position:absolute;
+    left:330px;
+    top: 360px;
+    width: 242px;
+    height: 228px;
+animation: fishmove 3s ease both;
+}
+.shan img:nth-child(2){
+	 position:absolute;
+    left:30px;
+    top:500px;
+
+}
+.shan img:nth-child(3){
+	 position:absolute;
+    left:830px;
+    top:535px;
+  
+}
+.shan img:nth-child(4){
+	 position:absolute;
+    left:1000px;
+    top:500px;
+  
+}
+.bottom{
+	width: 100%;
+	height: 126px;
+	background: url(../images/bg-1_e29bcfa.jpg);
+	position: absolute;
+	bottom: 0;
+	left: 0
+}
+
+/*登录界面*/
+.denglu{
+    width:340px ;
+    height:300px ;
+    position: absolute;
+    top:135px;
+    right:180px;
+    border-radius: 5px;
+    padding-top: 25px;
+    background: #4ebffc;
+}
+.denglu a{
+    text-decoration: none;
+}
+.denglu a:hover{
+    text-decoration:underline;
+}
+.dltop>div{
+    width: 299px;
+    height: 40px;
+    background: #fff;
+    margin-bottom: 23px;
+    margin-left: 20px;
+}
+.dltop>div>input{
+    outline: none;
+    border: none;
+    width: 252px;
+    height: 20px;
+    padding: 9px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.dltop>div>span{
+    vertical-align: middle;
+    display: inline-block;
+    width: 14px;
+    margin-left: 14px;
+    height: 14px;
+}
+.dltop>div:last-child{
+    background: transparent;
+}
+.dltop>div:last-child>input{
+    width: 120px;
+    height: 20px;
+    padding: 9px;
+    font-size: 20px;
+    vertical-align: middle;
+    background: #fff;
+}
+.dltop>div:last-child>img{
+    width: 99px;
+    height: 39px;
+    margin-left: 5px;
+    background: #B8E5FE;
+    vertical-align: middle;
+    border: none;
+}
+.dltop>div:last-child>a{
+    color: #fff;
+
+    font-size: 12px;
+}
+.dltop>div:first-child>span{
+    background: url("../images/icons.png") -124px -12px;
+}
+.dltop>div:nth-child(2)>span{
+    background: url("../images/icons.png") -140px -12px;
+}
+.dlbot div:first-child{
+    width: 299px;
+    height: 35px;
+    font-size: 18px;
+    line-height: 35px;
+    margin-top: 43px;
+    margin-left: 20px;
+    text-align: center;
+    background: #ffd850;
+    color: #5c4c12;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+.dlbot div:last-child{
+    padding: 0 20px;
+}
+.dlbot div:last-child>a:first-child{
+    display: inline-block;
+    width:112px;
+    margin-top: 21px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.dlbot div:last-child>a:last-child{
+    display: inline-block;
+    width:48px;
+    margin-top: 21px;
+    color: #fff;
+    font-size: 12px;
+    float: right;
+}
+.dlbot div:last-child>a:first-child>span{
+    display: inline-block;
+    width: 16px;
+    height: 17px;
+   vertical-align: middle;
+    background: url("../images/icons.png") no-repeat -203px -75px;
+}
